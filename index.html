@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>GitHub Repo Lookup Tool</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"
+    type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>GitHub Repo Lookup Tool</h1>
+
+    <h3>Please enter the GitHub username of the user whose repos you want to display.</h3>
+
+    <form id="js-form">
+      <label for="js-username-search">GitHub username:</label>
+      <input type="text" name="username-search" id="js-username-search" required></input>
+      <button type="submit">Submit.</button>
+    </form>
+
+    <p id="js-error-message" class="error-message"></p>
+
+    <section class="results hidden">
+      <h2>Here is your requested list of repos:</h2>
+      <ul class="js-results-list"></ul>
+    </section>
+
+
+  </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.js" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>

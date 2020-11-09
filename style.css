@@ -1,0 +1,18 @@
+/*--- main body styles ---*/
+
+* {
+    box-sizing: border-box;
+}
+
+button, input[type="text"] {
+    padding: 5px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hidden {
+  display: none;
+}
